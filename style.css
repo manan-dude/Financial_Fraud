@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+
+.css-uf99v8 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: auto;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(37, 132, 169);
+    background: linear-gradient(45deg, rgb(7, 39, 155),rgb(56, 136, 179),rgb(227, 112, 18),rgb(185, 13, 208));
+    /* background: linear-gradient(45deg, orange,white(56, 138, 160),rgb(2, 2, 71),green); */
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    
+    /* background-image: url('https://s3.envato.com/files/63261750/0169_SparklingRain.jpg');
+    background-repeat: no-repeat; */
+}
+@keyframes color{
+0%{
+background-position: 0 50%;
+}
+50%{
+background-position: 100% 50%;
+}
+100%{
+background-position: 0 50%;
+}
+}
+
+.css-1y4p8pa {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 20px;
+border: 3px solid rgba(17, 200, 220, 0.18);  
+margin-top: 73px;
+margin-bottom: -30px;
+}
+.css-1y4p8pa:hover{
+    border: 3px solid rgb(7, 11, 8);
+    transition: 0.5s ease-in-out;
+}
+
+.css-1n76uvr {
+    width: 704px;
+    position: relative;
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    gap: -2rem;
+    margin-top: -252px;
+}
+
+/* button */
+
+.css-5uatcg{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background: #1E90FF;
+    width:105px;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+
+}
+.btn:hover,.btn:focus,.btn:active{
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.st-cl {
+    min-height: 95px;
+    background: rgb(48 51 62);
+    border: #0f215c;
+}
+.st-cl:after{
+    border: #0f215c;
+}
+.p{
+    font-size:3px;
+}
+
+.css-10trblm{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    animation: glitch 1s linear infinite;
+
+    
+}
+@keyframes glitch{
+    2%,64%{
+      transform: translate(2px,0) skew(0deg);
+    }
+    4%,60%{
+      transform: translate(-2px,0) skew(0deg);
+    }
+    62%{
+      transform: translate(0,0) skew(5deg); 
+    }
+  }
+  
+  .css-10trblm:before,
+  .css-10trblm:after{
+    content: attr(title);
+    position: absolute;
+    left: 0;
+  }
+  
+  .css-10trblm:before{
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  }
+  
+  @keyframes glitchTop{
+    2%,64%{
+      transform: translate(2px,-2px);
+    }
+    4%,60%{
+      transform: translate(-2px,2px);
+    }
+    62%{
+      transform: translate(13px,-1px) skew(-13deg); 
+    }
+  }
+  
+  .css-10trblm:after{
+    animation: glitchBotom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  }
+  
+  @keyframes glitchBotom{
+    2%,64%{
+      transform: translate(-2px,0);
+    }
+    4%,60%{
+      transform: translate(-2px,0);
+    }
+    62%{
+      transform: translate(-22px,5px) skew(21deg); 
+    }
+  }
+
+  .css-10trblm{
+    color: #eee;
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 3px;
+    font-family: 'sdglitch';
+    text-shadow: rgb(23, 169, 91) -2px 0,
+                 rgb(63, 18, 169) 2px 0;
+
+
+  }
+  .css-10trblm {
+    color: #eee;
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 3px;
+    font-family: cursive;
+    text-shadow: rgb(23, 169, 91) -2px 0, rgb(63, 18, 169) 2px 0;
+}

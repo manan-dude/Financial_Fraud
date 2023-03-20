@@ -1,4 +1,6 @@
 import streamlit as st
+import time
+import streamlit.components.v1 as com
 import pickle
 import re
 from nltk.stem.porter import PorterStemmer
@@ -6,8 +8,17 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 port_stem = PorterStemmer()
 vectorization = TfidfVectorizer()
 
+com.html("""
+    
+
+""")
 vector_form = pickle.load(open('vector.pkl', 'rb'))
 load_model = pickle.load(open('model.pkl', 'rb'))
+
+# html code
+
+with open('style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>',unsafe_allow_html=True)
 
 def stemming(content):
     con=re.sub('[^a-zA-Z]', ' ', content)
@@ -27,13 +38,20 @@ def fake_news(news):
 
 if __name__ == '__main__':
     st.title('Financial Fraud Detector app ')
-    st.subheader("Input the Message below")
-    sentence = st.text_area("Enter your news content here", "",height=200)
-    predict_btt = st.button("predict")
+    st.subheader("Write the Message below")
+    sentence = st.text_area("",placeholder="Enter your message here",height=200)
+
+    predict_btt = st.button("Predict")
+    with st.spinner('Wait for it...'):
+        if(predict_btt):
+            time.sleep(1)
+            
     if predict_btt:
         prediction_class=fake_news(sentence)
         print(prediction_class)
         if prediction_class == [0]:
-            st.success('No Issues')
+            st.success("✅ no issues")
+            st.balloons()
         if prediction_class == [1]:
-            st.warning('Spam')
+            st.error('Spam Message',icon="🚨")
+            # st.error()
