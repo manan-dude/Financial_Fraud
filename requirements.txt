@@ -1,4 +1,5 @@
 nltk==3.8.1
 scikit_learn==1.0.2
 streamlit==1.20.0
-nltk.download('all')
+nltk.download('punkt')
+nltk.download('stopwards')
