@@ -1,4 +1,17 @@
+
 import streamlit as st
+
+st.set_page_config(page_title="Alpha-Fraud-Detector",page_icon=":warning:")
+
+def load_lottieurl(url):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
+
+
+
 import time
 import streamlit.components.v1 as com
 import pickle
@@ -35,8 +48,10 @@ def fake_news(news):
     vector_form1=vector_form.transform(input_data)
     prediction = load_model.predict(vector_form1)
     return prediction
-
 if __name__ == '__main__':
+
+   
+   
     st.title('Financial Fraud Detector app ')
     st.subheader("Write the Message below")
     sentence = st.text_area("",placeholder="Enter your message here",height=200)
