@@ -8,3 +8,7 @@ Furthermore, I worked on making the system modular to make it easy for other dev
 Overall, my contribution was to ensure that the AI model worked as expected, providing reliable results and real-time alerts to users in case of fraudulent activities. I also ensured that the project adhered to the best practices of machine learning development, ensuring that other developers could contribute to the project's development in the future.
 
 I am excited to be part of this project, and I believe that our AI-based fraud detector will be a valuable tool in preventing financial fraud losses. Feel free to explore the project and contribute to its development!
+
+# GUI
+![image](https://github.com/manan-dude/Financial_Fraud/assets/76246911/1280d460-4cb5-4073-bdbc-2edafa5e72be)
+
