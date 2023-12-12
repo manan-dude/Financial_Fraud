@@ -10,5 +10,11 @@ Overall, my contribution was to ensure that the AI model worked as expected, pro
 I am excited to be part of this project, and I believe that our AI-based fraud detector will be a valuable tool in preventing financial fraud losses. Feel free to explore the project and contribute to its development!
 
 # GUI
+- Input Box
 ![image](https://github.com/manan-dude/Financial_Fraud/assets/76246911/1280d460-4cb5-4073-bdbc-2edafa5e72be)
+
+- Output for Ham and Spam
+![image](https://github.com/manan-dude/Financial_Fraud/assets/76246911/d4c162b6-76a2-464d-8160-609e82fff193)
+
+
 
