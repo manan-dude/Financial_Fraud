@@ -1,6 +1,6 @@
 
 import streamlit as st
-<<<<<<< HEAD
+
 
 st.set_page_config(page_title="Alpha-Fraud-Detector",page_icon=":warning:")
 
@@ -13,9 +13,9 @@ lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fc
 
 
 
-=======
+
 st.set_page_config(page_title="Alpha-Fraud-Detector",page_icon=":warning:")
->>>>>>> 2fc1a65962de1df9838b6c4d4c34ae94f648475f
+
 import time
 import streamlit.components.v1 as com
 import pickle
