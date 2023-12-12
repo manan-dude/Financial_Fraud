@@ -16,5 +16,8 @@ I am excited to be part of this project, and I believe that our AI-based fraud d
 - Output for Ham and Spam
 ![image](https://github.com/manan-dude/Financial_Fraud/assets/76246911/d4c162b6-76a2-464d-8160-609e82fff193)
 
+![image](https://github.com/manan-dude/Financial_Fraud/assets/76246911/c77b95fa-9f6d-4226-abbf-e32b3f3387d4)
+
+
 
 
